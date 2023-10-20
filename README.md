@@ -1,11 +1,14 @@
 # CEI
-This will be a Python script that reads an `emojis.csv` (should it be `cei-defs.csv`?) definition file from working-directory (or parent dirs), and it replaces GH-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` tag. The default global sizes of all emojis is `16em` rather than `2em`, because of the way GH markdown-renderer works.
-
-An [example of the end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md) can be found at my profile.
+This will be a Python script that parses an `emojis.csv` (should it be `cei-defs.csv`?) definition file from working-directory (or parent dirs), and it replaces GH-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of the way GH markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md) can be found at my profile.
 
 Despite the fact the script will be desgined for use in GH, it can also be used to generate HTML files with custom emojis, as it'll be fully format-agnostic (content-format and filename-extension are irrelevant). The input text-file to be processed can be in any encoding that Python3 supports, however the **emoji-defs must be UTF-8**.
 
 If you need advanced-management and/or auto-updates for specific file-lists and globs, you'll need `make` and a make-file. I won't implement advanced features, as this script is meant to be "basic".
+
+## Name
+- "custom": Because it supports anything that can be considered an emoji, regardless if it's "officially-Unicode" or made-up.
+- "emoji": Actually 🤓, it supports any *graphical icon*, not just emojis. But because of how they look when rendered, they are indeed "emojis", [according to Wikipedia](https://en.wikipedia.org/wiki/Emoji).
+- "inliner": This one packs 2 meanings in 1! CEI does "variable-inlining" similarly to compilers; And it literally replaces the "variable" by its value within a line of text, rather than inserting the `<img>` element on its own line (as usual in HTML).
 
 ## Why?
 - It helps you manage/maintain custom emojis for a single file, or an entire directory.
