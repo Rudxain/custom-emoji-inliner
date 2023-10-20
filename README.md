@@ -1,5 +1,5 @@
 # CEI
-This will be a Python script that parses an `emojis.csv` (should it be `cei-defs.csv`?) definition file from working-directory (or parent dirs), and it replaces GH-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of the way GH markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md) can be found at my profile.
+This will be a Python script that parses an `emojis.csv` (should it be `cei-defs.csv`?) definition file from working-directory (or parent dirs), and it replaces GH-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of the way GH markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md#langs) can be found at my profile.
 
 Despite the fact the script will be desgined for use in GH, it can also be used to generate HTML files with custom emojis, as it'll be fully format-agnostic (content-format and filename-extension are irrelevant). The input text-file to be processed can be in any encoding that Python3 supports, however the **emoji-defs must be UTF-8**.
 
