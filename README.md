@@ -19,7 +19,7 @@ If you need advanced-management and/or auto-updates for specific file-lists and 
 - "inliner": This one packs 2 meanings in 1! CEI does "variable-inlining" similarly to compilers; And it literally replaces the "variable" by its value within a line of text, rather than inserting the `<img>` element on its own line (as usual in HTML).
 
 ## Why?
-- It helps you manage/maintain custom emojis for a single file, or an entire directory.
+- It helps you manage/maintain custom emojis for a single file, or an entire directory. So (similarly to Discord servers) you can have entire repos with custom-emojis, and users can copy your defs/macros file to easily post comments with your emojis! (yes! this includes Issues, PRs, and Discussions!)
 - Reduces bandwidth use by ensuring the same exact URL is shared across refs/macros. This has the side-effect of reducing generated cache.
 - All inlined `img`s will have the same structure/pattern, which increases compression-ratio.
 - Your source text-files can be readable/pretty by using refs, while the macro-expanded files are the only ones with inline-HTML.
