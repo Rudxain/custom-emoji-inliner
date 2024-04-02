@@ -8,15 +8,15 @@
   >
 </div>
 
-This will be a Python script that parses a "definitions-file" from working-directory (or parent dirs), and it replaces GH/Discord-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of how GH's markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md#langs) can be found at my profile.
+This will be a ~~Python script~~ Rust CLI (main program) and JS web-app (playground) that parses a "definitions-file" from working-directory (or parent dirs), and it replaces GH/Discord-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of how GH's markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md#langs) can be found at my profile.
 
 For convenience, the script will provide [its own (built-in) emoji name-space](cei-def.tsv), which contains commonly used emojis such as lang-logos and mascots. 3rd-party defs have precedence over built-in, so you can easily override any def with your preferred URI.
 
 CEI is a MarkDown pre-processor.
 
-Despite the fact the script will be designed for use in GH, it can also be used to generate HTML files with custom emojis (although this might **completely break** your HTML if you aren't careful), as it'll be fully format-agnostic (content-format and filename-extension are irrelevant). The input text-file to be processed can be in any encoding that Python3 supports, however the **emoji-defs must be UTF-8**.
+It'll be designed for use on GH, but it can be used to generate HTML files with custom emojis (although this might **completely break** your HTML if you aren't careful), as it'll be fully format-agnostic (content-format and filename-extension are irrelevant). The input text-file to be processed can be in any encoding, however the **emoji-defs must be UTF-8**.
 
-If you need advanced-management and/or auto-updates for specific file-lists and globs, you'll need `make` and a make-file. I won't implement advanced features, as this script is meant to be "basic".
+If you need advanced-management and/or auto-updates/hot-reloading for specific file-lists and globs, you'll need `make` and a make-file. I won't implement advanced features, as this script is meant to be "basic".
 
 ## Name
 - "custom": Because it supports anything that can be considered an emoji, regardless if it's "officially-Unicode" or made-up.
