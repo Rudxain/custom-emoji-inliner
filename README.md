@@ -10,7 +10,7 @@
 
 This will be a Python script that parses a "definitions-file" from working-directory (or parent dirs), and it replaces GH/Discord-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of how GH's markdown-renderer works. An [example end-product](https://github.com/Rudxain/Rudxain/blob/main/README.md#langs) can be found at my profile.
 
-For convenience, the script will provide [its own (built-in) emoji name-space](cei-def.csv), which contains commonly used emojis such as lang-logos and mascots. 3rd-party defs have precedence over built-in, so you can easily override any def with your preferred URI.
+For convenience, the script will provide [its own (built-in) emoji name-space](cei-def.tsv), which contains commonly used emojis such as lang-logos and mascots. 3rd-party defs have precedence over built-in, so you can easily override any def with your preferred URI.
 
 CEI is a MarkDown pre-processor.
 
