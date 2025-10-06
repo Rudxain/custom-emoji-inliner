@@ -2,7 +2,7 @@
 > [!note]
 > This is unimplemented
 
-This will be a program that parses a "definitions-file" from working-directory (or parent dirs), and it replaces GH/Discord-style "emoji references" (AKA ["short-codes"](https://emojipedia.org/shortcodes)) with the corresponding HTML `<img>` element.
+This will be a program that parses a "definitions-file" from working-directory (or parent dirs), and it replaces [GH](https://consumerrights.wiki/w/GitHub)/[discrap](https://consumerrights.wiki/w/Discord)-style "emoji references" (AKA ["short-codes"](https://emojipedia.org/shortcodes)) with the corresponding HTML `<img>` element.
 
 > [!warning]
 > Beware of [hot-linking](https://en.wikipedia.org/wiki/Inline_linking)!
@@ -26,7 +26,7 @@ If you need advanced-management and/or auto-updates/hot-reloading for specific f
   - it literally replaces the "variable" by its value, within a line of text, rather than inserting the `<img>` element on its own line (as usual in HTML).
 
 ## Why?
-- It helps manage/maintain custom emojis for a single file, or an entire directory. So (similarly to Discord servers) you can have **entire repos** with custom-emojis, and users can copy your defs/macros file to easily post comments with your emojis! (yes! this includes Issues, PRs, and Discussions!)
+- It helps manage/maintain custom emojis for a single file, or an entire directory. So (similarly to disbloat [guilds](https://joinmatrix.org/guide/matrix-vs-discord/#a-discussion-on-the-proper-definition-of-server)) you can have **entire repos** with custom-emojis, and users can copy your defs/macros file to easily post comments with your emojis! (yes! this includes Issues, PRs, and Discussions!)
 - Reduces bandwidth use by ensuring the same exact URL is shared across refs/macros. This has the side-effect of reducing generated cache.
 - All inlined `img`s will have the same structure/pattern, which can increase compression-ratio.
 - Your source text-files can be readable/pretty by using refs, while the macro-expanded files are the only ones with inline-HTML.
