@@ -8,7 +8,7 @@
   >
 </div>
 
-This will be a ~~Python script~~ Rust CLI (main program) and JS web-app (playground) that parses a "definitions-file" from working-directory (or parent dirs), and it replaces GH/Discord-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of how GH's markdown-renderer works. An [example end-product can be found at my profile](https://github.com/Rudxain/Rudxain/blob/main/README.md).
+This will be a ~~Python script~~ Rust CLI (main program) and JS web-app (playground) that parses a "definitions-file" from working-directory (or parent dirs), and it replaces [GH](https://consumerrights.wiki/w/GitHub)/[discrap](https://consumerrights.wiki/w/Discord)-style "emoji references" (that's how I call them) with the corresponding HTML `<img>` element. The default global sizes of all emojis is `16em` rather than `2em`, because of how GH's markdown-renderer works. An [example end-product can be found at my profile](https://github.com/Rudxain/Rudxain/blob/main/README.md).
 
 For convenience, the script will provide [its own (built-in) emoji name-space](cei-def.tsv), which contains commonly used emojis such as lang-logos and mascots. 3rd-party defs have precedence over built-in, so you can easily override any def with your preferred URI.
 
@@ -26,7 +26,7 @@ If you need advanced-management and/or auto-updates/hot-reloading for specific f
   - it literally replaces the "variable" by its value, within a line of text, rather than inserting the `<img>` element on its own line (as usual in HTML).
 
 ## Why?
-- It helps manage/maintain custom emojis for a single file, or an entire directory. So (similarly to Discord servers) you can have **entire repos** with custom-emojis, and users can copy your defs/macros file to easily post comments with your emojis! (yes! this includes Issues, PRs, and Discussions!)
+- It helps manage/maintain custom emojis for a single file, or an entire directory. So (similarly to disbloat [guilds](https://joinmatrix.org/guide/matrix-vs-discord/#a-discussion-on-the-proper-definition-of-server)) you can have **entire repos** with custom-emojis, and users can copy your defs/macros file to easily post comments with your emojis! (yes! this includes Issues, PRs, and Discussions!)
 - Reduces bandwidth use by ensuring the same exact URL is shared across refs/macros. This has the side-effect of reducing generated cache.
 - All inlined `img`s will have the same structure/pattern, which increases compression-ratio.
 - Your source text-files can be readable/pretty by using refs, while the macro-expanded files are the only ones with inline-HTML.
