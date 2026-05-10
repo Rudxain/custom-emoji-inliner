@@ -1,6 +1,8 @@
 # CEI - :B: => <🅱️>
 > [!note]
-> This is unimplemented
+> This is unimplemented.
+>
+> I've lost motivation to develop this. Copy-pasting seems good-enough, and I'm migrating away from [SSGs](https://en.wikipedia.org/wiki/Static_site_generator)
 
 This will be a program that parses a "definitions-file" from working-directory (or parent dirs), and it replaces [GH](https://consumerrights.wiki/w/GitHub)/[discrap](https://consumerrights.wiki/w/Discord)-style "emoji references" (AKA ["short-codes"](https://emojipedia.org/shortcodes)) with the corresponding HTML `<img>` element.
 
